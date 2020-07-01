@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "PermanentMarker";
+    src: url("../assets/fonts/PermanentMarker-Regular.ttf");
+}
+
+.modal-body{
+    padding-bottom: 0px;
+}
+
+.font-logo{
+    font:1.5rem PermanentMarker, Sans-serif;
+    color: #14992F !important;
+}
+
+.nav-link{
+    color: black;
+}
+
+a{
+    color: black;
+}
+

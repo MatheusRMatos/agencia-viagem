@@ -1,0 +1,58 @@
+.img-carrosel {
+    object-fit: cover;
+    object-position: 0 80%;
+}
+
+.carousel-fade .carousel-item {
+    opacity: 0;
+    transition-duration: 1.7s;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right {
+    opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-right {
+    opacity: 0;
+}
+
+.carousel-fade .carousel-item-next,
+.carousel-fade .carousel-item-prev,
+.carousel-fade .carousel-item.active,
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-prev {
+    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
+}
+
+.buscador{
+    position: fixed;
+    top:10%;
+/*    margin-top: 0%; */
+}
+
+.marketing {
+    /*
+    position: relative;
+    margin-top: 20%;
+    */
+    padding: 7%;
+}
+
+.titulo{
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
+
+.propaganda-item{
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.propaganda-titulo-item{
+    font-weight: 900;
+}
