@@ -30,12 +30,12 @@
 }
 
 .buscador{
-    position: fixed;
-    top:10%;
+    position: absolute;
+    top:40%;
 /*    margin-top: 0%; */
 }
 
-.marketing {
+.padding-block {
     /*
     position: relative;
     margin-top: 20%;
@@ -55,4 +55,9 @@
 
 .propaganda-titulo-item{
     font-weight: 900;
+}
+
+.card-largura {
+    max-width: 15rem;
+    min-width: 15rem;
 }
