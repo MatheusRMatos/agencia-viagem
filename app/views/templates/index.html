@@ -72,23 +72,47 @@
         </div>
     </div>
 
-    <!-- Carousel -->
-    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="..\..\assets\img\carousel\foz-iguaçu-carousel.png" class="d-block w-100 img-carrosel"
-                    alt="Foz do Iguaçu">
-            </div>
-            <div class="carousel-item">
-                <img src="..\..\assets\img\carousel\fernando-noronha-carousel.png" class="d-block w-100 img-carrosel"
-                    alt="Fernando de Noronha">
-            </div>
-            <div class="carousel-item">
-                <img src="..\..\assets\img\carousel\chapada-diamantina-carousel.png" class="d-block w-100 img-carrosel"
-                    alt="Chapada da Diamantina">
+    <section class="holder">
+        <!-- Carousel -->
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="..\..\assets\img\carousel\foz-iguaçu-carousel.png" class="d-block w-100 img-carrosel"
+                        alt="Foz do Iguaçu">
+                </div>
+                <div class="carousel-item">
+                    <img src="..\..\assets\img\carousel\fernando-noronha-carousel.png"
+                        class="d-block w-100 img-carrosel" alt="Fernando de Noronha">
+                </div>
+                <div class="carousel-item">
+                    <img src="..\..\assets\img\carousel\chapada-diamantina-carousel.png"
+                        class="d-block w-100 img-carrosel" alt="Chapada da Diamantina">
+                </div>
             </div>
         </div>
-    </div>
+
+        <!-- Buscador -->
+        <div class="container-fluid buscador">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="pesquisa" placeholder="" required>
+                            <div class="input-group-prepend">
+                                <button class="btn btn-primary" type="button">
+                                    <i data-feather="search"></i>
+                                </button>
+                            </div>
+                            <div class="invalid-feedback" style="width: 100%;">
+                                Digite um email válido.
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
 
     <!-- Propaganda -->
     <div class="container-fluid padding-block bg-light">
@@ -171,28 +195,9 @@
         </div>
     </div>
 
-    <!-- Buscador -->
-    <div class="container-fluid buscador">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <form>
-                    <div class="input-group">
-                        <input type="text" class="form-control" id="pesquisa" placeholder="" required>
-                        <div class="input-group-prepend">
-                            <button class="btn btn-primary" type="button">
-                                <i data-feather="search"></i>
-                            </button>
-                        </div>
-                        <div class="invalid-feedback" style="width: 100%;">
-                            Digite um email válido.
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
 
-    <script src="..\..\assets\api\bootstrap-4.1.3-dist\js\jquery-3.4.1.slim.min.js"></script>
+    
+    <script src="..\..\assets\api\jquery-3.5.1\jquery-3.5.1.min.js"></script>
     <script src="..\..\assets\api\bootstrap-4.1.3-dist\js\popper.min.js"></script>
     <script src="..\..\assets\api\bootstrap-4.1.3-dist\js\bootstrap.min.js"></script>
     <script src="..\..\assets\api\feather\feather.min.js"></script>

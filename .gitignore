@@ -1,2 +1,5 @@
 notas.txt
 *.json
+node_modules
+.dockerignore
+Dockerfile

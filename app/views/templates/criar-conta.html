@@ -145,7 +145,6 @@
                                     <label for="estado">Estado</label>
                                     <select class="custom-select d-block w-100" id="estado" required>
                                         <option value="">Escolha...</option>
-                                        <option>São Paulo</option>
                                     </select>
                                     <div class="invalid-feedback">
                                         Selecione um estado válido.
@@ -153,9 +152,8 @@
                                 </div>
                                 <div class="col-md-4 mb-3">
                                     <label for="cidade">Cidade</label>
-                                    <select class="custom-select d-block w-100" id="cidade" required>
+                                    <select class="custom-select d-block w-100" id="cidade" required disabled>
                                         <option value="">Escolha...</option>
-                                        <option>São Paulo</option>
                                     </select>
                                     <div class="invalid-feedback">
                                         Selecione uma cidade válida.
@@ -213,10 +211,11 @@
             </footer>
         </div>
 
-        <script src="..\..\assets\api\bootstrap-4.1.3-dist\js\jquery-3.4.1.slim.min.js"></script>
+        <script src="..\..\assets\api\jquery-3.5.1\jquery-3.5.1.min.js"></script>
         <script src="..\..\assets\api\bootstrap-4.1.3-dist\js\popper.min.js"></script>
         <script src="..\..\assets\api\bootstrap-4.1.3-dist\js\bootstrap.min.js"></script>
         <script src="..\..\assets\api\feather\feather.min.js"></script>
+        <script src="..\..\controllers\requisitions\uf-cidade.js"></script>
         <script>
             feather.replace()
         </script>

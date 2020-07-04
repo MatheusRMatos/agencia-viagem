@@ -29,12 +29,6 @@
     transform: translate3d(0, 0, 0);
 }
 
-.buscador{
-    position: absolute;
-    top:40%;
-/*    margin-top: 0%; */
-}
-
 .padding-block {
     /*
     position: relative;
@@ -60,4 +54,19 @@
 .card-largura {
     max-width: 15rem;
     min-width: 15rem;
+}
+
+.holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#carouselExampleFade{
+    width: 100%;
+}
+
+.buscador {
+    position: absolute;
+    /*    margin-top: 0%; */
 }
