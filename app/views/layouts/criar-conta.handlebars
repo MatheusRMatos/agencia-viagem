@@ -1,0 +1,138 @@
+<div class="container">
+    <div class="py-5 text-center">
+        <img class="d-block mx-auto mb-4" src="..\..\assets\img\logo\vpb-128.png" alt="">
+        <h2>Crie uma conta</h2>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2 order-md-1"></div>
+        <div class="col-md-8 order-md-1">
+            <form class="needs-validation" novalidate>
+                <div class="row">
+                    <div class="col-md-8 mb-3">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" class="form-control" id="name" placeholder="" value="" required>
+                        <div class="invalid-feedback">
+                            Digite um nome válido.
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="address">Telefone</label>
+                        <input type="text" class="form-control" id="telefone" required>
+                        <div class="invalid-feedback">
+                            Digite um número de telefone válido.
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="email">Endereço de E-mail</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">@</span>
+                            </div>
+                            <input type="text" class="form-control" id="email" placeholder="E-mail" required>
+                            <div class="invalid-feedback" style="width: 100%;">
+                                Digite um email válido.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label for="email">Senha</label>
+                        <div class="input-group">
+                            <input type="password" class="form-control" id="senha" placeholder="Senha" required>
+                            <div class="invalid-feedback" style="width: 100%;">
+                                Digite uma senha válida.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="mb-4">
+
+                <h4 class="mb-3">Endereço</h4>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="cep">CEP</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="cep" placeholder="">
+                            <button class="btn btn-secondary" type="button" data-toggle="collapse"
+                                data-target="#collapseEndereco" aria-expanded="false" aria-controls="collapseEndereco"
+                                id="btncep">
+                                Não sei meu CEP
+                            </button>
+                        </div>
+                        <div class="invalid-feedback">
+                            Digite um CEP válido.
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse" id="collapseEndereco">
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <label for="estado">Estado</label>
+                            <select class="custom-select d-block w-100" id="estado" required>
+                                <option value="">Escolha...</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Selecione um estado válido.
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="cidade">Cidade</label>
+                            <select class="custom-select d-block w-100" id="cidade" required disabled>
+                                <option value="">Escolha...</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Selecione uma cidade válida.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="rua">Rua</label>
+                            <input type="text" class="form-control" id="rua" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Digite um endereço válido.
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="numero-residencia">Número</label>
+                            <input type="text" class="form-control" id="numero-residencia" placeholder="" required>
+                            <div class="invalid-feedback">
+                                Digite um número válido.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label for="bairro">Bairro</label>
+                        <input type="text" class="form-control" id="bairro" placeholder="" required>
+                        <div class="invalid-feedback">
+                            Digite um bairro válido.
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="complemento">Complemento</label>
+                        <input type="text" class="form-control" id="complemento" placeholder="">
+                        <div class="invalid-feedback">
+                            Digite um complemento válido.
+                        </div>
+                    </div>
+                </div>
+                <hr class="mb-4">
+                <button class="btn btn-primary btn-lg btn-block" type="submit">Criar Conta</button>
+            </form>
+        </div>
+        <div class="col-md-2 order-md-1"></div>
+    </div>
+
+    <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; Viaje pelo Brasil</p>
+    </footer>
+</div>

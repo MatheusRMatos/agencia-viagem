@@ -1,0 +1,44 @@
+.input-age {
+    max-width: 60px;
+}
+
+.data {
+    max-width: 100px;
+}
+
+fieldset {
+    border: 1px solid #cccccc;
+    padding-bottom: 1%;
+    margin-left: 0.8%;
+    margin-right: 0.8%;
+}
+
+option {
+    font-size: 0.95rem !important;
+}
+
+.search-area{
+    position: absolute;
+    width: 90%;
+    border-radius: 20px;
+}
+
+.dest,
+.orig,
+.sec-data>div,
+.sec-pessoas>div {
+    margin-top: 1rem;
+}
+
+legend{
+    margin-bottom: 0;
+}
+
+.text-search{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.titulo-search{
+    font-size: 2rem;
+}
