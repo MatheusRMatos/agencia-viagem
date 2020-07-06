@@ -71,3 +71,18 @@
     /*    margin-top: 0%; */
 }
 
+
+.container {
+    max-width: 960px;
+}
+
+.text-search {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.text-titulo {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #14992F;
+}

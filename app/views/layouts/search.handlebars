@@ -19,7 +19,7 @@
 
     <!-- Buscador -->
     <div class="search-area container-fluid bg-light px-2 py-4 mx-0">
-        <form action="/dados" method="POST" class="mb-0 w-100" autocomplete="off">
+        <form action="/pacotes" method="POST" class="mb-0 w-100" autocomplete="off">
             <div class="row justify-content-center">
                 <fieldset class="sec-local-orig col-md-2">
                     <legend>Origem</legend>
@@ -31,7 +31,8 @@
                     </div>
                     <div class="orig">
                         <label for="cidade">Cidade</label>
-                        <select class="custom-select d-block w-100" id="cidade-orig" name="idCidadeOrigem" required disabled>
+                        <select class="custom-select d-block w-100" id="cidade-orig" name="idCidadeOrigem" required
+                            disabled>
                             <option value="" selected disabled hidden> Escolha </option>
                         </select>
                     </div>
@@ -47,7 +48,8 @@
                     </div>
                     <div class="dest">
                         <label for="cidade">Cidade</label>
-                        <select class="custom-select d-block w-100" id="cidade-dest" name="idCidadeDestino"required disabled>
+                        <select class="custom-select d-block w-100" id="cidade-dest" name="idCidadeDestino" required
+                            disabled>
                             <option value="" selected disabled hidden> Escolha </option>
                         </select>
                     </div>
@@ -57,11 +59,11 @@
                     <legend>Data</legend>
                     <div>
                         <label for="d-orig">Data Origem</label>
-                        <input class="data" id="d-orin" type="text" name="dataOrigem" required>
+                        <input class="data" id="d-orin" type="text" id="dataOrigem" name="dataOrigem" required>
                     </div>
                     <div>
                         <label for="d-dest">Data Destino</label>
-                        <input class="data" id="d-dest" type="text" name="dataDestino" required>
+                        <input class="data" id="d-dest" type="text" id="dataDestino" name="dataDestino" required>
                     </div>
                 </fieldset>
 
@@ -69,12 +71,14 @@
                     <legend>Hóspedes</legend>
                     <div class="older">
                         <label for="">A partir de 12 anos</label>
-                        <input class="input-age" type="number" min="1" step="1" name="hospedesMaiores" required>
+                        <input class="input-age" type="number" id="hospedesMaiores" min="1" step="1"
+                            name="hospedesMaiores" required>
                     </div>
 
                     <div class="newer">
                         <label for="">Entre 0 e 11 anos</label>
-                        <input class="input-age" type="number" min="1" step="1" name="hospedesMenores" required>
+                        <input class="input-age" type="number" id="hospedesMenores" min="1" step="1"
+                            name="hospedesMenores" required>
                     </div>
                 </fieldset>
 
@@ -83,13 +87,14 @@
                     <div class="row">
                         <fieldset class="sec-classe py-3 col-12">
                             <legend>Quartos</legend>
-                            <input class="input-quarto w-100" type="number" min="1" step="1" name="quartos" required>
+                            <input class="input-quarto w-100" type="number" min="1" step="1" id="quartos" name="quartos"
+                                required>
                         </fieldset>
                     </div>
                     <div class="row">
                         <fieldset class="sec-classe py-3 mt-2 col-12">
                             <legend>Classe</legend>
-                            <select class="custom-select d-block w-100" name="idClasse" required>
+                            <select class="custom-select d-block w-100" id="idClasse" name="idClasse" required>
                                 <option value="" selected disabled hidden> Escolha
                                 </option>
                                 <option value="0"> Econômica </option>
@@ -114,8 +119,81 @@
     </div>
 </section>
 
+<!-- Propaganda -->
+<div class="container-fluid padding-block bg-light">
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <h3 class="text-center titulo">Agende sua viagem</h3>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-4 propaganda-item">
+            <h5 class="text-center propaganda-titulo-item">Pacotes ideiais para você</h5>
+            <p class="text-justify">Planeje sua viagem com pacotes prontos ou monte um personalizado de acordo
+                com seus gostos e necessidades.</p>
+        </div>
+        <div class="col-md-4 propaganda-item">
+            <h5 class="text-center propaganda-titulo-item">As melhores ofertas</h5>
+            <p class="text-justify">Aqui você encontra as melhores opções de passagens aéreas, os hotéis
+                melhores avaliados, além
+                de atividades, passeios e aluguel de carros para o seu destino preferido.</p>
+        </div>
+        <div class="col-md-4 propaganda-item">
+            <h5 class="text-center propaganda-titulo-item">Aproveite suas Férias</h5>
+            <p class="text-justify"> Agende sua viagem de férias para o lugar que sempre sonhou do jeito que
+                desejar.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Pacotes -->
+<div class="container-fluid padding-block">
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <h3 class="text-center titulo">Pacotes Imperdíveis</h3>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <article class="card card-largura border-dark p-0 m-3 col-12 col-md-6 col-lg-3">
+            <img src="..\..\assets\img\carousel\foz-iguaçu-carousel.png" class="card-img-top card-img" alt="...">
+            <div class="card-body">
+                <h5 class="card-title  font-weight-bold">Foz do Iguaçu</h5>
+                <p class="card-text ">Os exploradores podem ver uma das cachoeiras mais impressionantes do mundo, as Cataratas do Iguaçu.</p>
+                <a href="#" class="btn btn-secondary ">Conheça mais</a>
+            </div>
+        </article>
+
+        <article class="card card-largura border-dark p-0 m-3 col-12 col-md-6 col-lg-3">
+            <img src="..\..\assets\img\carousel\fernando-noronha-carousel.png" class="card-img-top card-img" alt="...">
+            <div class="card-body">
+                <h5 class="card-title  font-weight-bold">Fernando de Noronha</h5>
+                <p class="card-text ">Fernando de Noronha possui um delicado ecossistema com praias inigualáveis de águas quentes e calmas.</p>
+                <a href="#" class="btn btn-secondary ">Conheça mais</a>
+            </div>
+        </article>
+
+        <article class="card card-largura border-dark p-0 m-3 col-12 col-md-6 col-lg-3">
+            <img src="..\..\assets\img\carousel\chapada-diamantina-carousel.png" class="card-img-top card-img" alt="...">
+            <div class="card-body">
+                <h5 class="card-title  font-weight-bold">Chapada da Diamantina</h5>
+                <p class="card-text ">A Chapada Diamantina, na Bahia, é um destino para os fãs do ecoturismo e do turismo de aventura.</p>
+                <a href="#" class="btn btn-secondary ">Conheça mais</a>
+            </div>
+        </article>
+
+        <article class="card card-largura border-dark p-0 m-3 col-12 col-md-6 col-lg-3">
+            <img src="..\..\assets\img\carousel\cristo-redentor.png" class="card-img-top card-img" alt="...">
+            <div class="card-body">
+                <h5 class="card-title  font-weight-bold">Rio de Janeiro</h5>
+                <p class="card-text ">Com suas praias abundantes e montanhas dramáticas é fácil se apaixonar pelo Rio de Janeiro.</p>
+                <a href="#" class="btn btn-secondary ">Conheça mais</a>
+            </div>
+        </article>
+    </div>
+</div>
+
 <!-- Resultados -->
-<section class="resultados container-fluid">
+<section class="resultados container-fluid" hidden>
     <div class="row">
         Resultados
     </div>

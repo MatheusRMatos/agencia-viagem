@@ -17,12 +17,16 @@ module.exports = {
             }
         };
 
-        request(options, function (error, response, body) {
+        request(options, function (error, response, data) {
             if (error) {
                 throw new Error(error);
                 console.log("Não foi possível encontrar um aeroporto disponível nesta cidade.")
             }
-            console.log(body);
+           return new Promise(resolve => {
+               setTimeout(() => {
+                   resolve(data);
+               }, 1000);
+           });
         });
     }
 }
